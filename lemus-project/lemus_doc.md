@@ -5,48 +5,55 @@
 Reviewing my tools. Which language/software to use?  
 - Using Java is most comfortable and cuts down on prep work. Use Python is easier to read/write the CSVs, allows more time to focus on the details of the project.
 - Review GitHub basics.
-- VSCode or Eclipse
-*Keep in mind*
+- VSCode or Eclipse   
+*Keep in mind* :
 Program should be able to handle **more than two inputs**, inputs with **different columns**, and **very large (> 2GB) files** gracefully.
 
 ## Breaking down the project  
 
-    1. Read a CSV file
-        - https://earthly.dev/blog/csv-python/
-    2. Create/Write to a CSV file
-        - https://www.pythontutorial.net/python-basics/python-write-csv-file/
-        - https://www.codingem.com/python-write-to-csv-file/
-    3. Command line arguments
-        - https://www.geeksforgeeks.org/command-line-arguments-in-python/?id=discuss  
-    4. Create new CSV file, combine new info with input file info
-        - Extract file names
-        - Create headers
-        - Order original info
-        - Pass on original info with added column
-    5. Put it all together
-*Testing along the way!*
+1. Read a CSV file  
+2. Create/Write to a CSV file  
+3. Read/utilize command line arguments  
+4. Create new CSV file, combine new info with input file info  
+    - Extract file names
+    - Create headers
+    - Order original info
+    - Pass on original info with added column
+5. Put it all together   
+
+Links used :   
+- https://earthly.dev/blog/csv-python/
+- https://www.pythontutorial.net/python-basics/python-write-csv-file/
+- https://www.codingem.com/python-write-to-csv-file/
+- https://www.geeksforgeeks.org/command-line-arguments-in-python/?id=discuss     
+
+*Test along the way!*
 
 ## Learning curves
 
 Since I am fairly new to python, there were some things I had to learn as they arose.  
-- https://www.w3schools.com/python/default.asp 
 - A class will help with reusability and encapsulation, a focus for the project
     - Learning how to construct a class and call methods in python 
 - Method vs Function
     - Method cannot be called independently, must operate on an object, an instance of the class.
     - Function can be called independently.
-        - https://www.geeksforgeeks.org/difference-method-function-python/ 
     - Debugging from the command line (pdb).
     - Installing pandas for a clean user result.
-        - https://www.w3schools.com/python/pandas/default.asp
 - Best practices for return statements
-    - https://realpython.com/python-return-statement/#using-the-python-return-statement-best-practices 
+
+Links used:   
+- https://www.w3schools.com/python/default.asp
+- https://www.geeksforgeeks.org/difference-method-function-python/
+- https://www.w3schools.com/python/pandas/default.asp
+- https://realpython.com/python-return-statement/#using-the-python-return-statement-best-practices   
 
 ## Testing and Debugging
 
-- https://machinelearningmastery.com/a-gentle-introduction-to-unit-testing-in-python/ 
 - I was not able to complete testing due to problems with command line arguments. 
-- Testing of the program was completed along the way with print statements and debugging to create a working final program, though unit tests were not achievable.
+- Testing of the program was completed along the way with print statements and debugging to create a working final program, though unit tests were not achievable.  
+
+Links used:   
+- https://machinelearningmastery.com/a-gentle-introduction-to-unit-testing-in-python/   
 
 ## Successes and Challenges
 
