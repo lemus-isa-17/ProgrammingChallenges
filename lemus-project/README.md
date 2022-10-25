@@ -2,11 +2,16 @@
 
 This project is created by Isabella Lemus to fulfill the CSV Combiner Programming Challenge designed by PMG.  
 
-The contents of the project include the CSVCombiner (lemus_CSV.py), the fixtures folder (CSV files to input), the testing class (test.py), and a document detailing my thought process and approach to the challenge for personal use (lemus_doc.md).  
+The contents of the project include:   
+- The CSVCombiner (lemus_CSV.py) 
+- The fixtures folder (CSV files to input) 
+- The testing class (test.py)
+- A document detailing my thought process and approach to the challenge for personal use (lemus_doc.md)
+- This README.
 
 ## Function   
 
-The program takes CSV files as input from the command line and outputs a new CSV file containing the information from the original file inputs in addition to a new column that includes the filename from which the row originated.    
+The program takes CSV files as input from the command line and outputs a new CSV file containing the information from the original files, in addition to a new column that includes the filename from which the row originated.    
 
 The new column is titled 'filename'.  
 
@@ -14,11 +19,12 @@ The program is able to handle more than two inputs, inputs with different column
 
 ## Running the program    
 
-The program runs from the command line, where the CSV files to combine are included as arguments. For example, to run the code, one could write:  
+The program runs from the command line, where the CSV files to combine are included as arguments.  
+For example, to run the code, one could write:  
 
-'python3 lemus_CSV.py ./fixtures/clothing.csv ./fixtures/accessories.csv'
+    'python3 lemus_CSV.py ./fixtures/clothing.csv ./fixtures/accessories.csv'
 
-The code then outputs the rows from the original files with the new 'filename' column included.
+The code then outputs a new CSV file with the rows from the original files and a new 'filename' column included.
 
 ## Testing
 
