@@ -26,7 +26,7 @@ class CSVCombiner:
         # Set up to store given arguments, create the new file, check 
         # the order of the existing files
         self.args = []
-        self.header = ["email_hash", "category", "filename"]
+        self.header = ["email_hash","category","filename"]
         self.contents = []
         self.storeArgs()        
 
