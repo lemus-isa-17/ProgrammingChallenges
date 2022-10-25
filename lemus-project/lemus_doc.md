@@ -1,11 +1,10 @@
 #CSV Project Notes
-###*Because I'm tired of using Google Docs*
 
 ##Initial Thoughts, Planning
-Reviewing my tools. Which language and software to use.
-- Use Java, most comfortable and cuts down on prep work. Use Python, easier for the barebones, allows more time to for details
-- Review GitHub basics
-- VSCode, Eclipse...
+Reviewing my tools. Which language/software to use?
+- Using Java is most comfortable and cuts down on prep work. Use Python is easier to read/write the CSVs, allows more time to focus on the details of the project.
+- Review GitHub basics.
+- VSCode or Eclipse
 *Keep in mind*
 Program should be able to handle **more than two inputs**, inputs with **different columns**, and **very large (> 2GB) files** gracefully.
 
@@ -17,43 +16,45 @@ Program should be able to handle **more than two inputs**, inputs with **differe
         - https://www.codingem.com/python-write-to-csv-file/
     3. Command line arguments
         - https://www.geeksforgeeks.org/command-line-arguments-in-python/?id=discuss  
-    4. Read files from command line
-    5. Create new CSV file, combine new info with input file info
+    4. Create new CSV file, combine new info with input file info
         - Extract file names
         - Create headers
-        - Store? or Pass on original info
-    6. Put it all together
+        - Order original info
+        - Pass on original info with added column
+    5. Put it all together
 *Testing along the way!*
 
-##Learning along the way
-Drawback of python is that I'm sacrificing some good coding practice for functionality.
-- A class will help with reusability and encapsulation, a focus for the project
-    - Learning how to construct a class, call methods
-- Method vs Function
-    - Method cannot be called independently, must operate on an object, an instance of the class
-    - Function can be called independently
-        - https://www.geeksforgeeks.org/difference-method-function-python/ 
-    - Debugging from the command line (pdb)
-    - Installing pandas for a clean user result
-        - https://www.w3schools.com/python/pandas/default.asp
-
-##Handling data, creating combined CSV
-Storing data from each file or creating new file as it is read.
-    - Speed/Functionality
-    - Storage
-
-##Best Practices
+##Learning curves
+Since I am fairly new to python, there were some things I had to learn as they arose.
 https://www.w3schools.com/python/default.asp 
-https://realpython.com/python-return-statement/#using-the-python-return-statement-best-practices 
-Deciding how to refactor as I went.
-Worked in main method, made new methods out of processes I used in main.
-Discerning where best to have variables, local or global.
+- A class will help with reusability and encapsulation, a focus for the project
+    - Learning how to construct a class and call methods in python 
+- Method vs Function
+    - Method cannot be called independently, must operate on an object, an instance of the class.
+    - Function can be called independently.
+        - https://www.geeksforgeeks.org/difference-method-function-python/ 
+    - Debugging from the command line (pdb).
+    - Installing pandas for a clean user result.
+        - https://www.w3schools.com/python/pandas/default.asp
+- Best practices for return statements
+    - https://realpython.com/python-return-statement/#using-the-python-return-statement-best-practices 
 
 ##Testing and Debugging
 - https://machinelearningmastery.com/a-gentle-introduction-to-unit-testing-in-python/ 
+- I was not able to complete testing due to problems with command line arguments. 
+- Testing of the program was completed along the way with print statements and debugging to create a working final program, though unit tests were not achievable.
+
+##Successes and Challenges
+- I am proud that I was able to:
+    - Read, write and combine the CSV files.
+    - Learn more about python, a language with which I had little prior experience.
+    - Use command line arguments in my program.
+    - Refactor my program as best I could along the way. Although I had to sacrifice some good coding practices due to my lack of familiarity, I was still able to write clean code. I felt my use of classes and methods allowed my code to be reusable as well.
+- In the future, I would like to improve:
+    - The ability of the program to handle large files. Of all the criteria, this is the one I felt most short of. While it can process the files in a relatively quick amount of time, the resulting CSV is not always fully visible in the terminal.
+        - I would further research the processing of input CSV files. This could have an effect on the storage and processing speed of the program. 
+    - Testing. I was unable to complete the unit test requirements of this project. While I did simple tests along the way to create a working project, I was not able to create working unit tests. Passing command line arguments to the CSVCombiner objects I initiated in the testing class proved to be a challenge I was not able to overcome given the timeframe of the project.
 
 
-###Links used
+####Links used for documentation file
 [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
-
-**Do your best. You decide your best.**

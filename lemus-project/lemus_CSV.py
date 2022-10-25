@@ -1,43 +1,52 @@
 # Created by Isabella Lemus
 # CSV Combiner project for PMG Programming Challenge
-# 10/22/2022
+# 10/20/2022
 #
 # This class contains methods to read CSV files passed through the command 
 # line and combine them into one file to be printed.
 # The new file will contain a column identifying the name of the origin file
 # of each element.
 #
-# This will be fun :)
 import csv
 import sys
 
 class CSVCombiner:
 
     def __init__(self) -> None:
+
+        # Created a method instead for testing purposes
+        #
         # First make sure that file(s) have been given as arguments
-        if ((len(sys.argv)) > 1):
-            self.numArgs = len(sys.argv)
-        else:
+        # if ((len(sys.argv)) > 1):
+        #     self.numArgs = len(sys.argv)
+        # else:
             # If there are no arguments, quit program
-            self.numArgs = 0
-            print("File not valid or does not exist. Try again.")
-            exit()
-        # Set up to create the new file, check the order of the existing files
+        #     self.numArgs = 0
+            
+        # Set up to store given arguments, create the new file, check 
+        # the order of the existing files
+        self.args = []
         self.header = ["email_hash", "category", "filename"]
         self.contents = []
+        self.storeArgs()        
 
-    def displayCSV(self):
+    def storeArgs(self):
+        for i in range(1, len(sys.argv)):
+            self.args.append(sys.argv[i])
+        if (len(self.args) == 0):
+            print("Enter a valid file in command line. Try again.")
+            exit()
+
+    # Method to display new CSV file using pandas
+    # for user clarity
+    def displayCSV(self, fileName):
         import pandas as pan
-        toDisplay = pan.read_csv("newCSV.csv")
+        toDisplay = pan.read_csv(fileName)
         print(toDisplay.to_string())
-        #with open("newCSV.csv", 'r') as file:
-        #    csvRead = csv.reader(file)
-        #    for row in csvRead:
-        #        print(row)
 
     # Method to construct a new CSV file with a new column
-    def constructCSV(self):
-        with open('newCSV.csv', 'w') as file:
+    def constructCSV(self, fileName):
+        with open(fileName, 'w') as file:
             writer = csv.writer(file)
             writer.writerow(self.header)
             writer.writerows(self.contents)
@@ -60,11 +69,11 @@ class CSVCombiner:
     # Method to open the files from the cmd line arguments, combine them into one
     # file, and print contents of new file.
     def main(self):
-        for i in range(1, self.numArgs):
+        for i in range(0, len(self.args)):
             # Extract the file name
-            fName = self.getFileName(sys.argv[i])
+            fName = self.getFileName(self.args[i])
             # Print file contents
-            with open(sys.argv[i], 'r') as file:
+            with open(self.args[i], 'r') as file:
                 csvRead = csv.reader(file)
                 inOrder = True
                 for row in csvRead:
@@ -76,10 +85,10 @@ class CSVCombiner:
                             self.contents.append([row[0], row[1], fName])
                         else:
                             self.contents.append([row[1], row[0], fName])
-            # Make new CSV file
-            self.constructCSV()
-            # Read the new file to stdout
-            self.displayCSV()
+        # Make new CSV file
+        self.constructCSV("newCSV.csv")
+        # Read the new file to stdout
+        self.displayCSV("newCSV.csv")
 
 # Create CSVCombiner object
 # Run program
