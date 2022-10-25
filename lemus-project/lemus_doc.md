@@ -5,7 +5,8 @@
 Review my tools. Which language/software should I use?  
 - I am most familiar with Java, which would cut down on prep work and issues due to gaps in knowledge. Using Python is easier to read/write the CSVs, which would allow more time to focus on the later intricacies of the project.
 - Review GitHub basics.
-- VSCode or Eclipse?   
+- VSCode or Eclipse?       
+
 *Keep in mind* :
 Program should be able to handle **more than two inputs**, inputs with **different columns**, and **very large (> 2GB) files** gracefully.
 
