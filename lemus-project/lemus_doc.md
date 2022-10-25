@@ -1,14 +1,16 @@
-#CSV Project Notes
+# CSV Project Notes
 
-##Initial Thoughts, Planning
-Reviewing my tools. Which language/software to use?
+## Initial Thoughts, Planning  
+
+Reviewing my tools. Which language/software to use?  
 - Using Java is most comfortable and cuts down on prep work. Use Python is easier to read/write the CSVs, allows more time to focus on the details of the project.
 - Review GitHub basics.
 - VSCode or Eclipse
 *Keep in mind*
 Program should be able to handle **more than two inputs**, inputs with **different columns**, and **very large (> 2GB) files** gracefully.
 
-##Breaking down the project
+## Breaking down the project  
+
     1. Read a CSV file
         - https://earthly.dev/blog/csv-python/
     2. Create/Write to a CSV file
@@ -24,9 +26,10 @@ Program should be able to handle **more than two inputs**, inputs with **differe
     5. Put it all together
 *Testing along the way!*
 
-##Learning curves
-Since I am fairly new to python, there were some things I had to learn as they arose.
-https://www.w3schools.com/python/default.asp 
+## Learning curves
+
+Since I am fairly new to python, there were some things I had to learn as they arose.  
+- https://www.w3schools.com/python/default.asp 
 - A class will help with reusability and encapsulation, a focus for the project
     - Learning how to construct a class and call methods in python 
 - Method vs Function
@@ -39,12 +42,14 @@ https://www.w3schools.com/python/default.asp
 - Best practices for return statements
     - https://realpython.com/python-return-statement/#using-the-python-return-statement-best-practices 
 
-##Testing and Debugging
+## Testing and Debugging
+
 - https://machinelearningmastery.com/a-gentle-introduction-to-unit-testing-in-python/ 
 - I was not able to complete testing due to problems with command line arguments. 
 - Testing of the program was completed along the way with print statements and debugging to create a working final program, though unit tests were not achievable.
 
-##Successes and Challenges
+## Successes and Challenges
+
 - I am proud that I was able to:
     - Read, write and combine the CSV files.
     - Learn more about python, a language with which I had little prior experience.
@@ -56,5 +61,6 @@ https://www.w3schools.com/python/default.asp
     - Testing. I was unable to complete the unit test requirements of this project. While I did simple tests along the way to create a working project, I was not able to create working unit tests. Passing command line arguments to the CSVCombiner objects I initiated in the testing class proved to be a challenge I was not able to overcome given the timeframe of the project.
 
 
-####Links used for documentation file
+#### Links used for documentation file :
+
 [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
