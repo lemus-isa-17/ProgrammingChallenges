@@ -1,6 +1,6 @@
 # Lemus CSV Combiner  
 
-This project is created by Isabella Lemus to fulfill the CSV Combiner Programming Challenge designed by PMG.  
+This project is created by Isabella Lemus to attempt the CSV Combiner Programming Challenge designed by PMG.  
 
 The contents of the project include:   
 - The CSVCombiner (lemus_CSV.py) 
