@@ -66,6 +66,7 @@ Links used:
     - The ability of the program to handle large files. Of all the criteria, this is the one I felt most short of acieving. While it can process large files in a relatively quick amount of time, the resulting CSV is not always fully visible in the terminal.
         - I would further research the processing of input CSV files. This could have an effect on the storage and processing speed of the program. 
     - Testing. I was unable to complete the unit test requirements of this project. While I did simple tests along the way to create a working project, I was not able to create working unit tests. Passing command line arguments to the CSVCombiner objects I initiated in the testing class proved to be a challenge I was not able to overcome given the timeframe of the project.
+    - File reading. In hindsight, I may have misinterpreted a requirement. I would refactor the program so that it could handle files with different column names, and not just columns out of order.
 
 
 #### Links used for documentation file :
